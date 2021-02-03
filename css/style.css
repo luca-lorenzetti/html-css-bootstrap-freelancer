@@ -11,60 +11,191 @@ body a {
     color: #fff !important;
 }
 
-h2,
-span,
-p{
-
-    color: #fff ;
+h1 {
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.image {
-    height: 100px;
-    width: 100px;
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+h2,
+span,
+p {
+    color: #fff;
+}
+
+hr {
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #000;
+}
+
+#about hr,
+._jumbotron hr {
+    border-color: #fff;
+}
+
+i:not(footer i):not(#about a i) {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.male_image {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.navbar_row {
+    height: 90px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 18px;
 }
 
 ._jumbotron {
-     /* temp */
-    padding-top: 100px;
+    /* temp */
+    padding-top: 40px;
     /* temp */
     padding-bottom: 100px;
-
-    text-align: center;
     color: white;
 }
 
-#portfolio img{
-    height: 350px;
+._jumbotron h2 {
+    font-size: 65px;
+}
+
+._jumbotron p {
+    font-size: 25px;
+}
+
+.card {
+    padding: 0 20px;
+}
+
+#portfolio .row>.container {
+    margin: 50px 0;
+}
+
+#portfolio img {
     width: 350px;
-    padding: 30px 10px;
-}
-.title_star > h2,
-.title_star > span{
-    color: #000 ;
+    border-radius: 12px;
+    margin: 25px 0px;
 }
 
-#about button{
-    background-color: #1abc9c;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 15px 10px;
-}
-#about p{
-    margin-top: 100px;
-    font-size: 20px;
-}
-
-#contact{
-    padding: 50px;
-}
-#contact form{
+.title_star>h2 {
     margin-top: 50px;
 }
-#message{
+
+.title_star>h2,
+.title_star>span {
+    color: #000;
+}
+
+#about {
+    padding: 50px;
+    color: #fff;
+}
+
+#about h2 {
+    padding-right: 40px;
+}
+
+#about a {
+    background-color: #1abc9c;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+#about p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 0 7px;
+}
+
+
+#contact {
+    padding: 50px;
+}
+
+#contact {
+    padding: 50px;
+}
+
+#contact input,
+#contact textarea {
+    font-size: 20px;
+    padding: 40px 10px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.4);
+}
+
+#contact form {
+    margin-top: 50px;
+}
+
+#message {
     resize: none;
 }
 
-#send{
+#send {
     background-color: #1abc9c;
     color: #fff;
+    font-size: 20px;
+    padding: 20px 30px;
+    border: 12px;
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding-top: 40px;
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+footer ul {
+    text-align: right;
+}
+
+footer li {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 10px 8px;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+#last_row {
+    background-color: #1a252f;
+    line-height: 80px;
+    vertical-align: middle;
+    margin-top: 50px;
 }
