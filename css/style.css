@@ -7,6 +7,9 @@
     background-color: #1abc9c;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 body a {
     color: #fff !important;
 }
@@ -83,18 +86,35 @@ header {
     font-size: 25px;
 }
 
-.card {
-    padding: 0 20px;
-}
-
 #portfolio .row>.container {
     margin: 50px 0;
 }
-
-#portfolio img {
+.card {
+    position: relative;
+    margin: 10px;
     width: 350px;
     border-radius: 12px;
-    margin: 25px 0px;
+    overflow: hidden;
+}
+.card > ._plus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1100px;
+}
+.card:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 252.77px;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.9);
+    transition: 2s;
+    border-radius: 12px;
 }
 
 .title_star>h2 {
@@ -192,7 +212,9 @@ footer p {
     letter-spacing: 2px;
 
 }
-
+#around_the_web ul{
+    padding-left: 10px;
+}
 #last_row {
     background-color: #1a252f;
     line-height: 80px;
