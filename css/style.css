@@ -7,6 +7,10 @@
     background-color: #1abc9c;
 }
 
+.fa-bars {
+    margin: 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -18,7 +22,6 @@ body a {
 h2 {
     font-size: 45px;
     font-weight: bold;
-    padding-right: 40px;
 }
 
 h2,
@@ -28,10 +31,11 @@ p {
 }
 
 hr {
-    border-width: 5px;
-    border-radius: 20px;
-    border-color: #000;
-    max-width: 10%;
+    display: inline-block;
+    margin: 0px 12px 9px 12px;
+    min-width: 10%;
+    border: 2px solid #000;
+    border-radius: 50px;
 }
 
 
@@ -55,22 +59,26 @@ header {
     padding-top: 50px;
 }
 
-#navbar_row{
+#navbar_row {
     font-weight: bold;
     padding: 25px 0;
     font-size: 20px;
 }
-#brand{
+
+#brand {
     font-size: 30px;
     font-weight: bold;
 }
-#hamburger span{
+
+#hamburger span {
     background-color: #fff;
 }
-#hamburger{
+
+#hamburger {
     height: 40px;
 }
-#hamburger button{
+
+#hamburger button {
     border: none;
     border-radius: 6px;
     height: 50px;
@@ -79,12 +87,17 @@ header {
     color: #fff;
     font-size: 15px;
 }
-#hamburger button i:before{
+
+#hamburger button i:before {
     font-size: 15px;
     height: 30px;
     margin: 0;
 }
-.far-bars{
+#hamburger button:hover{
+    background-color: #159a80;
+    transition: background-color 1s;
+}
+.far-bars {
     margin: 0;
 }
 
@@ -106,6 +119,7 @@ header {
 ._jumbotron h1 {
     font-size: 65px;
     font-weight: bold;
+    color: #fff;
 }
 
 ._jumbotron p {
@@ -176,7 +190,8 @@ header {
 }
 
 #about h2 {
-    padding-right: 40px;
+    color: #fff;
+    padding: 0;
 }
 
 #about a {
@@ -185,6 +200,17 @@ header {
     border-radius: 6px;
     font-size: 20px;
     padding: 15px 25px;
+}
+#about a:hover i{
+    color: #000;
+    transition: color 1s;
+}
+#about a:hover {
+    border: 2px solid #000;
+    border-radius: 6px;
+    transition: background-color 1s;
+    transition: color 1s;
+    color: #000 !important;
 }
 
 #about p {
@@ -201,7 +227,10 @@ header {
 #contact {
     padding: 50px;
 }
-
+#contact button:hover{
+    background-color: #159a80;
+    transition: background-color 1s;
+}
 #contact input,
 #contact textarea {
     font-size: 20px;
@@ -239,25 +268,39 @@ footer h3 {
     font-weight: bold;
 }
 
-footer ul{
+footer ul {
     width: 100%;
     text-align: right;
+    font-size: 20px;
 }
+
 footer li {
-    color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 0 5px;
-
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+    padding: 15px 0;
 }
-footer li > i{
-    width: 100%;
+
+footer li:hover {
+    border-color: #2c3e50;
+    background-color: #fff;
+    transition: background-color 1s;
+    transition: border-color 1s;
+}
+
+footer li:hover i {
+    color: #2c3e50;
+    transition: color 1s;
 }
 
 footer p {
     margin-top: 10px;
     font-size: 20px;
 }
+
 #around_the_web ul {
     padding-left: 10px;
 }

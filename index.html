@@ -39,8 +39,6 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">portfolio</a></li>
                         <li><a href="#">about</a></li>
@@ -55,12 +53,18 @@
         <div class="container _jumbotron text-center">
             <div>
                 <img class="male_image" src="img/avataaars.svg" alt="male-icon">
-                <h1 class="text-uppercase">start bootstrap</h1>
                 <div class="row">
-                    <hr class=" col-xs-1 col-xs-offset-4">
-                    <i class="fas fa-star col-xs-1"></i>
-                    <hr class=" col-xs-1">
-                    <p class="col-xs-12 ">Graphic Artist - Web Designer - Illustrator</p>
+                    <!-- Title and Star -->
+                    <div class="title_star col-xs-12 text-center text-uppercase">
+                        <h1 class="title_section text-uppercase">start bootstrap</h1>
+                        <div class="divisor_star text-nowrap">
+                            <hr>
+                            <i class="fas fa-star "></i>
+                            <hr>
+                        </div>
+                        <p class="text-capitalize">Graphic Artist - Web Designer - Illustrator</p>
+                    </div>
+                    <!-- /Title and Star -->
                 </div>
 
             </div>
@@ -74,16 +78,17 @@
         <section id="portfolio">
             <div class="container text-center">
                 <!-- Title and Star -->
-                <div class="row text-uppercase">
-                    <div class="title_star col-xs-12">
+                <div class="row">
+                    <!-- Title and Star -->
+                    <div class="title_star col-xs-12 text-center text-uppercase">
                         <h2 class="title_section">portfolio</h2>
-                        <div class="row">
-                            <hr class=" col-xs-1 col-xs-offset-4">
-                            <i class="fas fa-star col-xs-1"></i>
-                            <hr class=" col-xs-1">
-                            <p class="col-sm-12 ">Graphic Artist - Web Designer - Illustrator</p>
+                        <div class="divisor_star text-nowrap">
+                            <hr>
+                            <i class="fas fa-star "></i>
+                            <hr>
                         </div>
                     </div>
+                    <!-- /Title and Star -->
                 </div>
                 <!-- /Title and Star -->
 
@@ -135,13 +140,16 @@
         <section id="about" class="container-fluid bg_secondary text-center">
             <div class="container">
                 <div class="row">
-                    <h2 class="col-xs-12 text-uppercase">about</h2>
-                    <div class="row">
-                        <hr class=" col-xs-1 col-xs-offset-4">
-                        <i class="fas fa-star col-xs-1"></i>
-                        <hr class=" col-xs-1">
-                        <p class="col-xs-12 ">Graphic Artist - Web Designer - Illustrator</p>
+                    <!-- Title and Star -->
+                    <div class="title_star col-xs-12 text-center text-uppercase">
+                        <h2 class="title_section">About</h2>
+                        <div class="divisor_star text-nowrap">
+                            <hr>
+                            <i class="fas fa-star "></i>
+                            <hr>
+                        </div>
                     </div>
+                    <!-- /Title and Star -->
                 </div>
 
                 <div class="row">
@@ -169,20 +177,21 @@
 
         <!-- Contact -->
         <section id="contact">
-            <div class="container text-center">
-                <!-- Title and Star -->
-                <div class="row text-uppercase">
-                    <div class="title_star col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <!-- Title and Star -->
+                    <div class="title_star col-xs-12 text-center text-uppercase">
                         <h2 class="title_section">contact me</h2>
-                        <div class="row">
-                            <hr class=" col-xs-1 col-xs-offset-4">
-                            <i class="fas fa-star col-xs-1"></i>
-                            <hr class=" col-xs-1">
-                            <p class="col-xs-12 ">Graphic Artist - Web Designer - Illustrator</p>
+                        <div class="divisor_star text-nowrap">
+                            <hr>
+                            <i class="fas fa-star "></i>
+                            <hr>
                         </div>
+                        <p class="col-xs-12 ">Graphic Artist - Web Designer - Illustrator</p>
                     </div>
+                    <!-- /Title and Star -->
                 </div>
-                <!-- /Title and Star -->
+
 
                 <div class="row">
                     <form class="col-xs-8 col-xs-offset-2">
@@ -209,34 +218,32 @@
     </main>
 
     <footer>
-        <!-- Columns row row -->
+        <!-- Columns row  -->
         <div class="container text-center">
-            <div class="col-sm-4">
-
-                <h3 class="text-uppercase col-sm-12">location</h3>
-                <p class="col-sm-12">2215 John Daniel Drive
-                    Clark, MO 65243</p>
-            </div>
-            <div class="col-sm-4">
-                <h3 class="text-uppercase">around the web</h3>
-                <div class="row">
-                    <ul class=" nav nav-pills list-inline text-right col-sm-12 col-xs-offset-3 col-sm-offset-1">
-                        <li class="col-xs-1 col-sm-2 col-xs-offset-1 col-sm-offset-1"><a href="#"><i
-                                    class="fab fa-facebook-f "></i></a></li>
-                        <li class="col-xs-1 col-sm-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="col-xs-1 col-sm-2"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="col-xs-1 col-sm-2"><a href="#"><i class="fab fa-fw fa-dribbble"></i></a></li>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 ">
+                    <h3 class="text-uppercase">location</h3>
+                    <p>2215 John Daniel Drive
+                        Clark, MO 65243</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3 class="text-uppercase"> around the web</h3>
+                    <ul class="list-inline text-center">
+                        <li><a href="#"><i class="fab fa-facebook-f "></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-fw fa-dribbble"></i></a></li>
                     </ul>
                 </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3 class="text-uppercase">about freelancer</h3>
+                    <p>Freelance is a free to use, MIT licensed Bootstrap theme
+                        created by
+                        <a href="">Start Bootstrap </a> .
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-4">
-                <h3 class="text-uppercase col-sm-12">about freelancer</h3>
-                <p class="col-sm-10 col-sm-offset-1">Freelance is a free to use, MIT licensed Bootstrap theme
-                    created by
-                    <a href="">Start Bootstrap </a> .
-                </p>
 
-            </div>
         </div>
         <!-- Copyright row -->
         <div class="container-fluid">
