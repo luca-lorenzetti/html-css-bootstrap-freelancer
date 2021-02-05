@@ -19,9 +19,12 @@
 .fa-bars {
     margin: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
@@ -34,14 +37,8 @@ hr {
     display: inline-block;
     margin: 0px 12px 9px 12px;
     min-width: 10%;
-    border: 2px solid #000;
+    border: 2px solid currentColor;
     border-radius: 50px;
-}
-
-
-#about hr,
-._jumbotron hr {
-    border-color: #fff;
 }
 
 i:not(footer i):not(#about a i) {
@@ -68,10 +65,11 @@ header {
 #brand {
     font-size: 30px;
     font-weight: bold;
+    
 }
 
 #hamburger span {
-    background-color: #fff;
+    background-color: currentColor;
 }
 
 #hamburger {
@@ -89,7 +87,7 @@ header {
 
 #hamburger button i:before {
     font-size: 15px;
-    height: 30px;
+    padding: 0;
     margin: 0;
 }
 
@@ -132,6 +130,7 @@ header {
 }
 
 #portfolio {
+    padding: 50px;
     padding-bottom: 60px;
 }
 
@@ -276,16 +275,16 @@ footer ul {
 footer li {
     border: 2px solid #fff;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 5px;
+    line-height: 60px;
     height: 60px;
     width: 60px;
     vertical-align: middle;
-    padding: 15px 0;
 }
 
 footer li:hover {
     border-color: #2c3e50;
-    background-color: #fff;
+    background-color: currentColor;
     transition: background-color 1s;
     transition: border-color 1s;
 }
